@@ -155,6 +155,7 @@ async function getBoard(boardId) {
 			deleteBtn.setAttribute("data-board-id", responseData.data.boardId);
 
 			btnBox.classList.remove("active");
+			
 			if (responseData.data.userId == userId) {
 				btnBox.classList.add("active");
 			}
